@@ -6130,7 +6130,7 @@
         "type": "function",
         "z": "0be109393cb5f28a",
         "name": "prepare API Request",
-        "func": "// Fetch the required parameters from msg.payload.misc\nconst { modul, program, unit_type, missingParams } = msg.payload.misc;\n\n// Construct the params query parameter from missingParams\nconst params = missingParams.map(param => param.key).join(\",\");\n\n// Construct the full API URL\nconst apiurl = `http://localhost:3000/params?module=${modul}&params=${params}&program=${program}&unit_type=${unit_type}`;\n\n// Append the constructed API URL to msg.payload.misc.apiurl\nmsg.url = apiurl;\n\nreturn msg;\n",
+        "func": "// Fetch the required parameters from msg.payload.misc\nconst { modul, program, unit_type, missingParams } = msg.payload.misc;\n\n// Construct the params query parameter from missingParams.\nconst params = missingParams.map(param => param.key).join(\",\");\n\n// Construct the full API URL\nconst apiurl = `http://localhost:3000/params?module=${modul}&params=${params}&program=${program}&unit_type=${unit_type}`;\n\n// Append the constructed API URL to msg.payload.misc.apiurl\nmsg.url = apiurl;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
