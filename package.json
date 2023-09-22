@@ -1,0 +1,12 @@
+{
+    "name": "mcflow2",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "mc2.json",
+            "credentialsFile": "mc2_cred.json"
+        }
+    }
+}
