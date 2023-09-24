@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the repository URL
-REPO_URL="git@github.com:RevealGC/node-red-sync.git"
+REPO_URL="https://github.com/mahesh-kariya/node-red-sync.git"
 
 # Define the directory name
 DIR_NAME="node-red-sync"
@@ -49,8 +49,12 @@ uibuilder
 lib
 projects
 *.backup
+*nodes*
+*projects.json
+*.runtime.*
+*.users.*
+*.config.*
 mc2_cred.json
-package-lock.json
 settings.js' > .gitignore
 
 # Replace settings.js
